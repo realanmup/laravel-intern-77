@@ -42,6 +42,7 @@ Vue.component('reference-form', require('./components/ReferenceForm.vue').defaul
 
 const app = new Vue({
     el: '#app',
+
 });
 
 
@@ -71,3 +72,4 @@ const app = new Vue({
     x--;
     })
 });
+

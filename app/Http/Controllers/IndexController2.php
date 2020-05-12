@@ -1,6 +1,13 @@
 <?php
-
 namespace App\Http\Controllers;
+
+
+
+
+
+
+use App\Services\SkillService;
+
 use App\Experience;
 use App\SocialLink;
 use Illuminate\Http\Request;
@@ -9,7 +16,9 @@ use App\Services\UserProfileServices;
 use App\userprofile;
 use App\Http\Requests\UserProfileRequest;
 use App\Services\UserProfileServices;
+
 use App\Services\ReferenceService;
+
 use App\Services\EducationDetailService;
 
 class IndexController2 extends Controller
@@ -75,8 +84,24 @@ class IndexController2 extends Controller
         return view('skills');
     }
 
+
+	  function addUserSkill(Request $request){
+        $skillDetail = SkillService::insertSkill($request);
+        return back();
+    }
+
+	public function create(RegisterSkillRequest $request)
+	{
+		$skill=SkillService::registeredSkill($request);
+		if (!is_null($skill)) {
+			ResponseService::sendHtmlResponse($skill,'skills','skill sucessfully added');
+		}
+	}
+    function educationDetail()
+      
     public function references()
     {
+
         $user = auth()->user();
         return view('references')->with('user', $user);
     }
@@ -128,4 +153,6 @@ class IndexController2 extends Controller
         return back();
     }
 }
+
+ -->
 
