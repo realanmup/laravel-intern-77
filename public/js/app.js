@@ -1982,83 +1982,9 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ReferenceForm.vue?vue&type=script&lang=js& ***!
   \************************************************************************************************************************************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      references: []
-    };
-  },
-  methods: {
-    addReferences: function addReferences() {
-      this.references.push({});
-    },
-    removeReferences: function removeReferences(index) {
-      this.references.splice(index, 1);
-    },
-    submit: function submit() {
-      axios.post('/form', {
-        references: this.references
-      });
-    }
-  }
-});
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\xampp\\htdocs\\laravel-intern-77\\resources\\js\\components\\ReferenceForm.vue: Unexpected token, expected \";\" (67:42)\n\n  65 |         },\n  66 |         submit(){\n> 67 |             axios.post('/user/references'){\n     |                                           ^\n  68 |                 references: this.references\n  69 |             })\n  70 |         }\n    at Parser._raise (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:742:17)\n    at Parser.raiseWithData (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:735:17)\n    at Parser.raise (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:729:17)\n    at Parser.unexpected (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:8757:16)\n    at Parser.semicolon (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:8739:40)\n    at Parser.parseExpressionStatement (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:11614:10)\n    at Parser.parseStatementContent (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:11215:19)\n    at Parser.parseStatement (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:11081:17)\n    at Parser.parseBlockOrModuleBlockBody (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:11656:25)\n    at Parser.parseBlockBody (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:11642:10)\n    at Parser.parseBlock (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:11626:10)\n    at Parser.parseFunctionBody (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:10634:24)\n    at Parser.parseFunctionBodyAndFinish (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:10617:10)\n    at Parser.parseMethod (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:10579:10)\n    at Parser.parseObjectMethod (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:10495:19)\n    at Parser.parseObjPropValue (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:10537:23)\n    at Parser.parseObjectMember (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:10461:10)\n    at Parser.parseObj (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:10374:25)\n    at Parser.parseExprAtom (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:9995:28)\n    at Parser.parseExprSubscripts (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:9602:23)\n    at Parser.parseMaybeUnary (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:9582:21)\n    at Parser.parseExprOps (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:9452:23)\n    at Parser.parseMaybeConditional (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:9425:23)\n    at Parser.parseMaybeAssign (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:9380:21)\n    at Parser.parseObjectProperty (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:10512:101)\n    at Parser.parseObjPropValue (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:10537:101)\n    at Parser.parseObjectMember (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:10461:10)\n    at Parser.parseObj (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:10374:25)\n    at Parser.parseExprAtom (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:9995:28)\n    at Parser.parseExprSubscripts (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:9602:23)\n    at Parser.parseMaybeUnary (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:9582:21)\n    at Parser.parseExprOps (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:9452:23)\n    at Parser.parseMaybeConditional (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:9425:23)\n    at Parser.parseMaybeAssign (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:9380:21)\n    at Parser.parseExportDefaultExpression (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:12283:24)\n    at Parser.parseExport (C:\\xampp\\htdocs\\laravel-intern-77\\node_modules\\@babel\\parser\\lib\\index.js:12185:31)");
 
 /***/ }),
 
@@ -50317,15 +50243,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!***************************************************!*\
   !*** ./resources/js/components/ReferenceForm.vue ***!
   \***************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ReferenceForm_vue_vue_type_template_id_15f94ed4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ReferenceForm.vue?vue&type=template&id=15f94ed4& */ "./resources/js/components/ReferenceForm.vue?vue&type=template&id=15f94ed4&");
 /* harmony import */ var _ReferenceForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ReferenceForm.vue?vue&type=script&lang=js& */ "./resources/js/components/ReferenceForm.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _ReferenceForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _ReferenceForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -50355,7 +50280,7 @@ component.options.__file = "resources/js/components/ReferenceForm.vue"
 /*!****************************************************************************!*\
   !*** ./resources/js/components/ReferenceForm.vue?vue&type=script&lang=js& ***!
   \****************************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -50459,7 +50384,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Global\Desktop\laravel-intern-77\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\laravel-intern-77\resources\js\app.js */"./resources/js/app.js");
 
 
 /***/ })
