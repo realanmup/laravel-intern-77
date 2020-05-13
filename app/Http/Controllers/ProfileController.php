@@ -1,4 +1,4 @@
- <?php
+<?php
 
 namespace App\Http\Controllers;
 
@@ -15,7 +15,7 @@ class ProfileController extends Controller
     public function show($username) {
         // dd($username);
         $user =  \App\User::with('following', 'followers')->where('username', $username)->first();
-        
+    
         $followers = $user->followers;
         $following = $user->following;
 
@@ -25,6 +25,4 @@ class ProfileController extends Controller
         return view('profile', array('user' => $user, 'newInfo' => 'newwer'));
         
     }
-    
 }
- 
