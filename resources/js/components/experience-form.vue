@@ -1,7 +1,7 @@
 <template>
     <div class="container mb-5">
         <button class="btn btn-sm btn-success  mb-3" type="button" @click="addSocialLink">Add More</button>
-        <h1>Social links</h1>
+        <h1>Experience</h1>
         <div id="socialForm">
             <template v-for="(sl, index) in experience">
                 <button class="float-right btn-danger" type="button" @click="removeLink(index)" :key="index">X</button>
